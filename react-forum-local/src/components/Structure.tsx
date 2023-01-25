@@ -55,7 +55,7 @@ const Structure = (props: any) => {
       </div>
 
       <div className="sidebar">  
-        <p className="comfortaa orangetxt" id="sidebar-react">Powered by: <span className="bluetxt">React</span> <img src="https://previews.dropbox.com/p/thumb/ABzeS1-vmUT5_0ZSIKALI1mq6K9uVl2_lDgqB5WeJ8A9gUEyVgMDYtCzKT3wW5vcvtB6wo-7Rfx5gXo4ZPYhQKUY1WHQ5QAaWKR1B6cW7_0gfwxkSC32-3Js5f1zdgvJetfpFkI1sw6lwdVbhJFqfXZIXtjEAPKf5wsgQbgWsR3Vd0nuKJYnPUwjouaCpOErtwmLMw_7WSacN4JzDO4vPcuLNYKk4TRCE9GrTiT9IPVTD_Z8UuKCfoqQLpvTQbdf1l7TqHdn7LFkB_RoDaNCsucrLgdfHY3rZa35Mmq3Y0KegIMcIR-dIgRsotFN-cTYCW7669kPECwGjnFQbY9eTpGZ7J9KMF7SCPdlQJ6uWsQ3qxnzevcX0R48T_LEa7YoZH8/p.png" width="30"/></p>
+        <p className="comfortaa orangetxt" id="sidebar-react">Powered by: <span className="bluetxt">React</span> <img src="./images/default_react_logo.png" width="30"/></p>
         <div id="profilebox" className="comfortaa sidebar-profile-text"> 
           👤:&nbsp;
           { loggedInUser == "Logged out"
