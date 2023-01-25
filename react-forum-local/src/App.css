@@ -1,0 +1,727 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+/* General Elements */
+
+img {
+  max-width:60%;
+}
+
+td { /* create a relative stack for the timestamp to absolute to bottom */
+  position: relative;
+}
+
+.centerdiv {
+  text-align: center;
+}
+
+.background-img {
+  background-image: url("../public/images/bg_image.png");
+  min-height: 100vh;
+  background-size: 80% 100%;
+}
+
+.comfortaa {
+  font-family: "Comfortaa"
+}
+
+.lighttext {
+  color: lightgray;
+  font-weight: lighter;
+}
+
+.spanheight {
+  height:100vh;
+}
+ 
+.littleverticalgap {
+  height: 2vh;
+}
+
+.orangetxt {
+  color: #d97300;
+}
+
+.bluetxt {
+  color: #779ecb;
+  font-weight: bold;
+}
+
+.blue-txt2 {
+  color: #1E3F66;
+  font-weight: bold;
+}
+
+.squishtxt {
+  font-size: 14px; 
+  font-weight: light;
+}
+
+/* so as to disable styling caused by anchors */
+td a {  
+  text-decoration: inherit; 
+  color: inherit;
+}
+
+td:nth-child(3) {
+  padding-right: 24px;
+  /* word-break: break-all;
+  writing-mode: tb-rl; */
+  font-weight: bold;
+  font-size: 15px;
+  max-width: 15vw;
+  word-wrap: break-word;
+}
+
+table {
+  border-top: 1px solid gray;
+}
+
+.ignore_css {
+  all: unset;
+}
+
+
+/* scrollable div within td */
+.scrollablespace { 
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: auto !important;
+
+}
+
+/* scrollable div in indiv post */
+.scrollablespace2 { 
+ 
+  overflow: auto !important;
+
+}
+
+/* Top Bar Elements */
+
+#nav_msg { 
+  color: white;
+  text-shadow: -1px -1px 0 red, 1px -1px 0 red, -1px 1px 0 red, 1px 1px 0 red;
+  font-family: "Comfortaa";
+  /* padding-top: 15px;
+  font-size: 14px;
+  position: absolute;
+  bottom: 2%;
+  right: 2%; */
+  margin-top: 10px;
+  margin-right: 10px;
+  text-align: right;
+}
+
+#top-bar-style { /* top bar */ 
+  text-align: center;
+  font-size: 13.5px;
+  font-family: 'Comfortaa';
+  
+}
+
+.nus_img {
+  width: 30px;
+}
+
+
+.navbar {
+  background-image: url("../public/images/topbar.png");
+  background-size: 20% 100%;
+}
+
+.navbar-brand { /* navbar brand */ 
+  padding-top: 10px; 
+  background-color: #3A3B3C;
+  font-family: "Comfortaa";
+  font-weight: bold;
+  font-size: 16px;
+
+}
+
+.nav-item>a:hover {
+  color:green !important;
+}
+
+
+.nav-link.active { /* top right links bg color */
+  background-color: #36454F !important;
+}
+
+.nav-link.active:hover { /* top right links bg color */
+  background-color: black !important;
+}
+
+/* Main content */
+
+#main_content { /* this div will serve as the main space */
+  
+  position: absolute;
+  right: 0%;
+  left: 16.5%;
+  background-image: url("../public/images/bg_image.png");
+  min-height: 120vh;
+  background-repeat: repeat; 
+}
+
+/* Sidebar Elements */
+
+#bottom_desc { /* bottom left text */ 
+  position: absolute;
+  font-family: "Comfortaa";
+  color:grey;
+  bottom: 8px;  
+  font-size: 12px;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-size: 0.7vw;
+
+}
+
+#bottom_desc a { /* bottom left text */ 
+  all: unset;
+  color:grey;
+  font-size: 0.7vw;
+
+}
+
+
+/* need to override sidebar a  */
+.profile-button {
+  text-align: center;
+  padding-left: 4% !important;
+  padding-top: 3%;
+  padding-bottom: 1%; 
+  /* technically can right L R T B in one line */
+  text-decoration: none;
+  font-family: "Comfortaa";
+  font-weight: lighter;
+  font-size: 1vw !important;
+  width: 90%;
+
+}
+
+.profile-button:hover {
+  color:green !important;
+  background-color: black;
+}
+
+#profilebox {
+  border:1px dotted white;
+  border-radius: 15px; 
+  height: 40%;
+  margin-bottom: 10%;
+  margin-left: 4%;
+  margin-right: 4%;
+  color: white;
+  padding: 10px;
+}
+
+.sidebar-profile-text {
+  font-size: 1vw;
+}
+
+
+#sidebar-react {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 10px;
+  padding:10px;
+}
+
+.sidebar {
+  height: 100%; 
+  width: 16.7%; 
+  position: fixed; 
+  background-color: #212529;
+  padding-top: 6%;
+}
+
+.sidebarbutton {
+  color: white;
+  background-color: #36454F;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* adds outline */
+  word-wrap: break-word;
+  position: relative;
+  z-index: 1;
+}
+
+/* The navigation menu links */
+.sidebar a {
+  padding-left: 15%;
+  text-decoration: none;
+  font-family: "Comfortaa";
+  font-weight: lighter;
+  font-size: 20px;
+  color: white;
+  display: block;
+  margin-top:5px; /* slight separation */
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: green;
+}
+
+/* Liking Elements */
+
+.shaded_like {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+#likes_display_self {
+  text-align: center;
+  padding-left:121.7px;
+  padding-right: 84px;
+  color:red;
+  font-weight: bold;
+
+}
+
+#likes_display_others {
+  text-align: center;
+  padding-right: 45px;
+  padding-left: 26px;
+  color:red;
+  font-weight: bold;
+  
+}
+
+#likes_display_indiv {
+  position: absolute; 
+  padding-left: 150px;
+  color:red;
+  font-weight: bold;
+  
+}
+
+/* not user's post, to the left a bit */
+#likes-display-indiv2 { 
+  position: absolute; 
+  padding-left: 32px;
+  color:red;
+  font-weight: bold;
+  
+}
+
+/* Filter Elements */
+.filter_button {
+  position:absolute;
+  margin-top: 11%;
+  right: 187px;
+}
+
+
+#filter_dropdown {
+  position:absolute;
+  right: 132.5px;
+  border: 2px solid green;
+  height: fit-content;
+}
+
+/* Homepages Elements / GTP buttons etc. */
+
+.welcome_msg {
+  padding-top: 5%;
+  padding-left: 10%;
+  font-family: "Comfortaa";
+  font-size: 3vw;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white; /* adds outline */
+  color: #1E3F66;
+  font-weight: bolder;
+  
+}
+
+.welcome_desc {
+  padding-top: 0%;
+  padding-left: 10%;
+  font-family: "Comfortaa";
+  max-width: 70vw;
+  font-size: 1.4vw;
+  font-weight: bolder;
+}
+
+#arts-sports {
+  position: absolute;
+  top:340px;
+  right: 0vw;
+  width: 60vw !important;
+}
+
+#GTP_button {
+  margin-left: 10%;
+}
+
+#home-GTP-button {
+  margin-left: 10%;
+  width: 15.5vw;
+  border: 3px solid rgba(58, 59, 60, 0.5);
+  font-size: 1.1vw;
+}
+
+.homepage-adj-btn {
+  width: 15.5vw;
+  border: 3px solid rgba(58, 59, 60, 0.5);
+  font-size: 1.1vw;
+}
+
+#regshiftupoverride {
+  padding-top: 7%;
+}
+
+#indivGTPbutton {
+  position: absolute;
+  top:80px;
+  right: 1.8%
+}
+
+#top-post-content {
+  border: 3px solid rgba(58, 59, 60, 0.5);
+  border-radius: 20px;
+  padding: 10px;
+  height: 36vh;
+  width: 26vw;
+  margin-left: 8.5vw;
+}
+
+#top-post-likes {
+  font-size: 2vw;
+}
+
+/* Form Elements */
+
+.contentbox {
+  height: 350px;
+}
+
+form {
+  border: 1px solid black;
+  padding: 50px;
+  border-radius: 15px; 
+  /* can only take 5, 15, 30, 50 */
+}
+
+/* hide before entering username */
+#outer_form { /* overrides form above */ 
+  border: none !important;
+  padding-left: 0px !important;
+  padding-top: 10px !important;
+ 
+   /* centralises using L&R */
+}
+
+/* show after correct username entered */
+#outer_form_show {
+  width: 400px;
+  padding: 50px;
+  border: 1px solid black;
+  border-radius: 15px;
+ 
+  
+}
+
+#security_qns {
+  border: 1px solid red;
+  padding: 10px;
+  border-radius: 15px; 
+} 
+
+.btn-primary {
+  background-color: #d97300;
+}
+.form-signin {
+  max-width: 400px;
+  padding-top: 7%;
+  margin: auto; /* centralises using L&R */
+  height: 200px;
+
+}
+
+.form-signin2 {
+  max-width: 800px;
+  padding-top: 1%;
+  margin: auto; /* centralises using L&R */
+  
+
+}
+
+.form-control {
+  border: 1px solid blue;
+  padding: 15px;  
+}
+
+.form-control2 {
+  height: 100px;
+  border: 1px solid blue;
+  padding: 15px;  
+  border-radius: 5px;
+  z-index: 0;
+  word-break: break-all;
+
+}
+
+.err {
+  color: red; 
+  font-family: "Comfortaa";
+  text-align: center;
+}
+
+.preview {
+  font-family: "Times New Roman";
+  word-break: break-all;
+}
+
+
+/* IndivPost.tsx Elements */
+
+#ignore-css-form-border {
+  border: none !important;
+}
+
+.indiv_post_content {
+  height: 450px;
+  width: 80.5vw;
+  border: 2px solid gray;
+  background-color: rgba(211, 211, 211, 0.5);
+
+  margin-left: 2%;
+
+  margin-top: 130px;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+#indivcommentbox {
+  
+  /* margin-top: -36px; */
+  
+  max-height: 250px;
+  height: 200px !important;
+  position: absolute; 
+  top: 587px;
+  margin-left: 10px;
+  border: 1px solid green;
+  padding: 15px;  
+  width: 53vw;
+  border-radius: 15px;
+  word-break: break-all;
+  background-color: rgba(211, 211, 211, 0.5);
+
+}
+
+#indivcommentsubmit {
+  position:absolute;
+  z-index: 0;
+  margin-left: 25px;
+  margin-top: 110px;
+}
+
+#indivpostprofile {
+  
+  border-radius: 15px; 
+  height: 120px;
+  width: 200px;;
+  border: 2px dotted black;
+  background-color: rgba(211, 211, 211, 0.5);
+  
+  padding: 10px;
+  margin-top: 5px;
+
+}
+
+#floatleft{
+  float: left;
+  margin-left: 2%;
+ 
+}
+#indivpostbutton {
+  margin-top: 10px;
+  
+}
+#indivpostbutton a {
+  width: 120px;;
+  height: fit-content;
+  font-size: 17px;
+  
+}
+
+#fatlikebutton {
+  
+  width: 70px !important;
+  /* override the 2% above */
+  
+  height: 71px !important;
+  
+}
+
+#indivcommenttable {
+  margin:auto;
+  width: 95% !important;
+}
+
+#indivcommenttable thead {
+  border: 2px solid orange;
+}
+
+/* PostDisplay.tsx Elements */
+
+.post-display-brand {
+  position: absolute;
+  top: 126px;
+  text-decoration: none;
+  left: 32vw;
+  background-color: gray;
+  padding: 5px 10px 5px 10px;
+  border-radius: 15px;
+  font-size: 20px;
+  border: 2px solid white;
+}
+
+.greenAnchor:hover {
+  color: green !important;
+}
+.postButton {
+  margin-top: 11%;
+  margin-left: 2.5%;
+}
+
+.prevButton {
+  position:absolute;
+  margin-top: 11%;
+  right: 100px;
+ 
+}
+.postdisplaytopmsg {
+  position: absolute; 
+  margin-top: 11.5%;
+  margin-left: 2.5%;
+  font-family: "Comfortaa";
+  font-weight: bold;
+  color: #779ecb;
+  font-size: 20px;
+}
+.nextButton {
+  position:absolute;
+  margin-top: 11%;
+  right: 40px;
+}
+
+.postButton:hover, .nextButton:hover, .prevButton:hover {
+  background-color: black;
+}
+
+.special_tables {
+  width: 95%;
+  margin-top: 2%;
+  align-self: center;
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Times New Roman";
+ 
+}
+
+.timestamp {
+  font-weight: lighter;
+  font-size: 15px;
+  position: absolute;
+  bottom: -12px; 
+  /*  ^ to override padding */
+  
+}
+
+.data_row {
+  max-height: 400px !important;
+  min-height: 200px !important;
+  border: 2px solid gray !important;
+  
+}
+
+.comment {
+  border: 1px solid white;
+  
+}
+
+.col1 {
+  width: 5%; 
+  
+}
+.col2 {
+  
+  max-width: 70%;
+  word-break:break-all;
+  word-wrap: break-word;
+  
+}
+
+.col2comment {
+
+  word-break:break-all;
+  padding-left: 40px !important; 
+  padding-right: 40px !important; 
+}
+
+.col3 {
+  width: 15%;
+  text-align: center;
+}
+
+.col4 {
+  width: 15.3%;
+} 
+
+.col5 {
+  width: 5%;
+}
+
+#tag-search {
+  width: 250;
+  border-radius: 10px;
+}
+
+#tag-search-submit {
+  width: 37px;
+  border-radius: 20px;
+}
+
+/* TagList.tsx Elements */
+
+#tag-table {
+  border: 3px solid rgba(58, 59, 60, 0.5);
+  border-radius: 15px;
+  border-collapse: separate;
+  margin-left: 8.5vw;
+  width: 70vw;
+  text-align: center;
+}
+
+#tag-table tbody {
+  display: block;
+  height: 500px;
+}
+
+#tag-table td:nth-child(1) {
+  height: 50px;
+  width: 60vw;
+}
+
+#tag-table td:nth-child(2) {
+  width: 40vw;
+}
+
+#tag-table th {
+  height: 50px;
+  border-radius: 15px;
+  background-color: rgba(26, 26, 26, 0.5);
+}
+
+#tag-table tr:nth-child(even) {
+  background-color: rgba(211, 211, 211, 0.5);
+}
+
+.tag-table-disable-deco {
+  text-decoration: none;
+}
+
+/* #################### */
