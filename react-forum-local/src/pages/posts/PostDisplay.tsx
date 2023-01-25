@@ -201,7 +201,7 @@ const UserPosts = () =>  {
                 <form action={`/posts/tag/${tag}/0`}   
                      className="ignore_css">
                   <input type="search" 
-                         placeholder="        Search Posts by Tag"  
+                         placeholder="  Search Posts by Tag"  
                          id="tag-search"
                          onChange={e=>setTag(e.target.value)}/> 
 
